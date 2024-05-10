@@ -602,8 +602,8 @@
 }
 
 .projects-projects {
-  width: 100%;  // Ensuring it takes full width
-  min-height: 100vh;  // Minimum height to cover the viewport height
+  width: 100%;  /* Ensuring it takes full width */
+  min-height: 100vh;  /* Minimum height to cover the viewport height */
   display: flex;
   overflow: hidden;
   position: relative;
@@ -613,10 +613,10 @@
 }
 
 .projects-projects1 {
-  gap: 2vw;  // Using viewport width for gaps makes it responsive
-  top: 30%;  // Using percentage for positioning
-  left: 5%;  // Using percentage for positioning
-  width: 90%;  // Making width responsive
+  gap: 2vw;  /* Using viewport width for gaps makes it responsive */
+  top: 30%;  /* Using percentage for positioning */
+  left: 5%;  /* Using percentage for positioning */
+  width: 90%;  /* Making width responsive */
   display: flex;
   position: absolute;
   flex-wrap: wrap;
@@ -625,17 +625,17 @@
 }
 
 .projects-card {
-  gap: 1rem;  // Using rem for gaps
-  width: 48%;  // Approx half of the container width to fit two in a row responsively
-  min-height: 30vh;  // Using viewport height for minimum height
+  gap: 1rem;  /* Using rem for gaps*/
+  width: 48%;  /* Approx half of the container width to fit two in a row responsively */
+  min-height: 30vh;  /* Using viewport height for minimum height */
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
 
 .projects-image {
-  width: 100%;  // Full width of the card
-  height: 60%;  // Making image height a percentage of the card's height
+  width: 100%;  /* Full width of the card */
+  height: 60%;  /* Making image height a percentage of the card's height */
   display: flex;
   overflow: hidden;
   position: relative;
@@ -645,13 +645,13 @@
 }
 
 .projects-copy {
-  gap: 0.5rem;  // Consistent spacing using rem
+  gap: 0.5rem;  /* Consistent spacing using rem*/
   display: flex;
   align-self: stretch;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;  // Padding inside the copy section
+  padding: 1rem;  /*  Padding inside the copy section */
 }
 .projects-text {
   color: rgba(0, 0, 0, 1);
@@ -693,14 +693,14 @@
   line-height: 150%;
 }
 .projects-navigation-footer {
-  width: 100%;  // Full width of the container
-  min-height: 20vh;  // Using viewport height for footer
+  width: 100%;  
+  min-height: 20vh; 
   display: flex;
   overflow: hidden;
   position: absolute;
   align-items: flex-start;
   background-color: rgba(255, 255, 255, 1);
-  bottom: 0;  // Positioning at the bottom of the section
+  bottom: 0;
 }
 .projects-text08 {
   top: 52px;
@@ -884,19 +884,19 @@
   display: none;
   background: none;
   border: none;
-  font-size: 30px;  // Large enough for easy interaction
+  font-size: 30px; 
   cursor: pointer;
 }
 
 @media (max-width: 768px) {
     .projects-projects1, .projects-card {
-    width: 100%;  // Full width for smaller devices
-    top: auto;  // Removing absolute positioning
+    width: 100%; 
+    top: auto;  
     left: auto;
     position: relative;
   }
   .projects-image {
-    height: 40vh;  // Adjusting image height for smaller screens
+    height: 40vh;  
   }
     .landingpage01-navigation {
     padding: 0.5rem; /* Smaller padding for mobile devices */
@@ -923,14 +923,12 @@
     margin-top: 20px; /* Spacing above the button on mobile */
   }
     .hamburger-menu {
-    display: block;  // Show hamburger button on small screens
+    display: block;  
   }
 
   #menuItems {
-    display: none;  // Initially hide menu items
-    width: 100%;  // Full width
+    display: none;  
+    width: 100%;  
     text-align: center;
   }
 }
-
-
