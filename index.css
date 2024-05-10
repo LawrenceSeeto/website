@@ -90,18 +90,21 @@
   object-fit: contain;
 }
 .landingpage01-navigation {
-  width: 100%;
+  overflow: hidden; /* Hides any overflow, ensuring no horizontal scrollbar */
+  width: 100vw; /* Ensures it matches exactly the viewport width */
+  max-width: 100%; /* Prevents exceeding the viewport width */
   height: 15vh;
   display: flex;
-  flex-direction: column; /* Add this line */
-  justify-content: center; /* Center vertically */
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
   align-items: center;
   background-color: rgba(255, 255, 255, 1);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
-  padding: 0 5vw; /* Add padding to the left and right sides */
+  padding: 0 5vw; /* Consider reducing or adjusting this if overflow persists */
+  box-sizing: border-box; /* Includes padding in the width calculation */
 }
 .landingpage01-items1 {
   gap: 48px;
