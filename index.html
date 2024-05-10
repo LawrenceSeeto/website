@@ -79,6 +79,17 @@
     <div>
       <link href="./index.css" rel="stylesheet" />
       <div class="main-container">
+        <div class="landingpage01-navigation">
+          <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+          <div class="menu-items" id="menuItems">
+            <button onclick="smoothScroll('About')">About</button>
+            <button onclick="smoothScroll('Projects')">Projects</button>
+            <button onclick="smoothScroll('Volunteering')">Volunteering</button>
+            <button onclick="smoothScroll('Interests')">Interests</button>
+            <button onclick="smoothScroll('Photography')">Photography</button>
+          </div>
+        </div>
+
         <section id="Landing">
           <div class="landingpage01-container">
             <div class="landingpage01-landingpage01">
@@ -272,6 +283,15 @@
           return t < 0.5 ? 16 * t * t * t * t * t : 1 - Math.pow(-2 * t + 2, 5) / 2;
       }
 }
+    function toggleMenu() {
+  var menu = document.getElementById('menuItems');
+  if (menu.style.display === 'block') {
+    menu.style.display = 'none';
+  } else {
+    menu.style.display = 'block';
+  }
+}
+
 </script>
   </body>
 </html>
