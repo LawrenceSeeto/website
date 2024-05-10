@@ -103,30 +103,35 @@
   align-items: center;
 }
 .landingpage01-text06 {
+  font-size: 2vmin; /* Font size is 5% of the viewport's smaller dimension */
   color: rgba(0, 0, 0, 1);
   height: auto;
   text-align: left;
   line-height: 150%;
 }
 .landingpage01-text08 {
+  font-size: 2vmin; /* Font size is 5% of the viewport's smaller dimension */
   color: rgba(0, 0, 0, 1);
   height: auto;
   text-align: left;
   line-height: 150%;
 }
 .landingpage01-text10 {
+  font-size: 2vmin; /* Font size is 5% of the viewport's smaller dimension */
   color: rgba(0, 0, 0, 1);
   height: auto;
   text-align: left;
   line-height: 150%;
 }
 .landingpage01-text12 {
+  font-size: 2vmin; /* Font size is 5% of the viewport's smaller dimension */
   color: rgba(0, 0, 0, 1);
   height: auto;
   text-align: left;
   line-height: 150%;
 }
 .landingpage01-text14 {
+  font-size: 2vmin; /* Font size is 5% of the viewport's smaller dimension */
   color: rgba(0, 0, 0, 1);
   height: auto;
   text-align: left;
