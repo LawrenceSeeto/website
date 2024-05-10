@@ -592,33 +592,6 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .landingpage01-navigation {
-    padding: 0.5rem; /* Smaller padding for mobile devices */
-    height: 10vh; /* Smaller height to free up screen space */
-  }
-
-  .landingpage01-items1 {
-    flex-direction: column; /* Stack navigation items vertically on small screens */
-    align-items: center; /* Align items to the center */
-    gap: 10px; /* Reduce the gap for a tighter layout */
-  }
-  .about-container {
-    flex-direction: column; /* Stack vertically on small screens */
-    align-items: center; /* Center-align items for better presentation on mobile */
-  }
-
-  .text-section, .image-section {
-    flex: none; /* Take full width */
-    margin: 0; /* Reset margins */
-    padding-top: 0; /* Remove padding on mobile for better space usage */
-  }
-
-  .about-button {
-    margin-top: 20px; /* Spacing above the button on mobile */
-  }
-}
-
 .projects-container {
   width: 100%;
   display: flex;
@@ -627,9 +600,10 @@
   align-items: center;
   flex-direction: column;
 }
+
 .projects-projects {
-  width: 100%;
-  height: 1767px;
+  width: 100%;  // Ensuring it takes full width
+  min-height: 100vh;  // Minimum height to cover the viewport height
   display: flex;
   overflow: hidden;
   position: relative;
@@ -637,46 +611,47 @@
   flex-shrink: 0;
   background-color: rgba(255, 255, 255, 1);
 }
+
 .projects-projects1 {
-  gap: 24px;
-  top: 481px;
-  left: 81px;
-  width: 1277px;
+  gap: 2vw;  // Using viewport width for gaps makes it responsive
+  top: 30%;  // Using percentage for positioning
+  left: 5%;  // Using percentage for positioning
+  width: 90%;  // Making width responsive
   display: flex;
   position: absolute;
   flex-wrap: wrap;
   align-items: flex-start;
-  flex-shrink: 0;
   justify-content: space-between;
 }
+
 .projects-card {
-  gap: 24px;
-  width: 621px;
-  height: 435px;
+  gap: 1rem;  // Using rem for gaps
+  width: 48%;  // Approx half of the container width to fit two in a row responsively
+  min-height: 30vh;  // Using viewport height for minimum height
   display: flex;
   align-items: flex-start;
-  flex-shrink: 0;
   flex-direction: column;
 }
+
 .projects-image {
-  width: 621px;
-  height: 281px;
+  width: 100%;  // Full width of the card
+  height: 60%;  // Making image height a percentage of the card's height
   display: flex;
   overflow: hidden;
   position: relative;
-  flex-grow: 1;
-  align-self: stretch;
   align-items: flex-start;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 1);
 }
+
 .projects-copy {
-  gap: 4px;
+  gap: 0.5rem;  // Consistent spacing using rem
   display: flex;
   align-self: stretch;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
+  padding: 1rem;  // Padding inside the copy section
 }
 .projects-text {
   color: rgba(0, 0, 0, 1);
@@ -718,16 +693,14 @@
   line-height: 150%;
 }
 .projects-navigation-footer {
-  top: 1503px;
-  left: -18px;
-  width: 1440px;
-  height: 264px;
+  width: 100%;  // Full width of the container
+  min-height: 20vh;  // Using viewport height for footer
   display: flex;
   overflow: hidden;
   position: absolute;
   align-items: flex-start;
-  flex-shrink: 0;
   background-color: rgba(255, 255, 255, 1);
+  bottom: 0;  // Positioning at the bottom of the section
 }
 .projects-text08 {
   top: 52px;
@@ -906,4 +879,40 @@
   position: absolute;
   text-align: left;
   line-height: 150%;
+}
+
+@media (max-width: 768px) {
+    .projects-projects1, .projects-card {
+    width: 100%;  // Full width for smaller devices
+    top: auto;  // Removing absolute positioning
+    left: auto;
+    position: relative;
+  }
+  .projects-image {
+    height: 40vh;  // Adjusting image height for smaller screens
+  }
+    .landingpage01-navigation {
+    padding: 0.5rem; /* Smaller padding for mobile devices */
+    height: 10vh; /* Smaller height to free up screen space */
+  }
+
+  .landingpage01-items1 {
+    flex-direction: column; /* Stack navigation items vertically on small screens */
+    align-items: center; /* Align items to the center */
+    gap: 10px; /* Reduce the gap for a tighter layout */
+  }
+  .about-container {
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: center; /* Center-align items for better presentation on mobile */
+  }
+
+  .text-section, .image-section {
+    flex: none; /* Take full width */
+    margin: 0; /* Reset margins */
+    padding-top: 0; /* Remove padding on mobile for better space usage */
+  }
+
+  .about-button {
+    margin-top: 20px; /* Spacing above the button on mobile */
+  }
 }
