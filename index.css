@@ -91,7 +91,7 @@
 }
 .landingpage01-navigation {
   overflow: hidden; /* Hides any overflow, ensuring no horizontal scrollbar */
-  width: 100vw; /* Ensures it matches exactly the viewport width */
+  width: 100%; /* Ensures it matches exactly the viewport width */
   max-width: 100%; /* Prevents exceeding the viewport width */
   height: 15vh;
   display: flex;
@@ -103,7 +103,7 @@
   top: 0;
   left: 0;
   z-index: 1;
-  padding: 0 5vw; /* Consider reducing or adjusting this if overflow persists */
+  padding: 1rem; /* Uniform padding - can be adjusted in media queries */
   box-sizing: border-box; /* Includes padding in the width calculation */
 }
 .landingpage01-items1 {
@@ -593,6 +593,16 @@
 }
 
 @media (max-width: 768px) {
+    .landingpage01-navigation {
+    padding: 0.5rem; /* Smaller padding for mobile devices */
+    height: 10vh; /* Smaller height to free up screen space */
+  }
+
+  .landingpage01-items1 {
+    flex-direction: column; /* Stack navigation items vertically on small screens */
+    align-items: center; /* Align items to the center */
+    gap: 10px; /* Reduce the gap for a tighter layout */
+  }
   .about-container {
     flex-direction: column; /* Stack vertically on small screens */
     align-items: center; /* Center-align items for better presentation on mobile */
