@@ -6,7 +6,7 @@
   --dl-size-size-xsmall: 16px;
   --dl-space-space-unit: 16px;
   --dl-size-size-xxlarge: 288px;
-  --dl-size-size-maxwidth: 1400px;
+  --dl-size-size-maxwidth: 100%;
   --dl-color-theme-accent1: #F3E8E2;
   --dl-color-theme-accent2: #D8BFAF;
   --dl-radius-radius-round: 50%;
