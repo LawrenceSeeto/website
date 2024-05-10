@@ -915,4 +915,22 @@
   .about-button {
     margin-top: 20px; /* Spacing above the button on mobile */
   }
+    .hamburger-menu {
+    display: block;  // Show hamburger button on small screens
+  }
+
+  #menuItems {
+    display: none;  // Initially hide menu items
+    width: 100%;  // Full width
+    text-align: center;
+  }
 }
+
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;  // Large enough for easy interaction
+  cursor: pointer;
+}
+
