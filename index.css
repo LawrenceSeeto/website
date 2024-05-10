@@ -160,6 +160,7 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 255, 255);
+  z-index: 1;
 }
 .footer-text {
   margin-bottom: 1rem; /* Adjust the spacing as needed */
