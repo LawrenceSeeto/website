@@ -11,7 +11,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow: auto;
+  overflow: hidden;
   padding-top: 15vh; /* Adjust this value to match the height of the navigation bar */
 }
 .landingpage01-landingpage01 {
