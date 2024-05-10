@@ -880,6 +880,13 @@
   text-align: left;
   line-height: 150%;
 }
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;  // Large enough for easy interaction
+  cursor: pointer;
+}
 
 @media (max-width: 768px) {
     .projects-projects1, .projects-card {
@@ -926,11 +933,4 @@
   }
 }
 
-.hamburger-menu {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 30px;  // Large enough for easy interaction
-  cursor: pointer;
-}
 
