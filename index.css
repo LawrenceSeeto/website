@@ -1,3 +1,4 @@
+
 .main-container {
   width: 100vw; /* ensures the container matches the width of the viewport */
   max-width: 100%; /* prevents the container from extending beyond the viewport */
@@ -571,16 +572,19 @@
 .about-title {
   font-size: 3rem; /* Increased size for visibility */
   color: rgba(0, 0, 0, 1);
+  margin-left: 20%;
 }
 
 .about-subheading {
   font-size: 2rem; /* Increased size for visibility */
   color: rgba(130, 130, 130, 1);
+  margin-left: 20%;
 }
 
 .about-bodytext {
   font-size: 1.5rem; /* Increased size for readability */
   margin-bottom: 20px; /* Space below the paragraph */
+  margin-left: 20%;
 }
 
 .about-button {
@@ -590,6 +594,7 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  margin-left: 20%;
 }
 
 .projects-container {
@@ -602,57 +607,54 @@
 }
 
 .projects-projects {
-  width: 100%;  /* Ensuring it takes full width */
-  min-height: 100vh;  /* Minimum height to cover the viewport height */
+  width: 100%;
   display: flex;
-  overflow: hidden;
-  position: relative;
-  align-items: flex-start;
-  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
   background-color: rgba(255, 255, 255, 1);
 }
 
 .projects-projects1 {
-  gap: 2vw;  /* Using viewport width for gaps makes it responsive */
-  top: 30%;  /* Using percentage for positioning */
-  left: 5%;  /* Using percentage for positioning */
-  width: 90%;  /* Making width responsive */
+  width: 90%;  /* Adjusted for better responsiveness */
   display: flex;
-  position: absolute;
   flex-wrap: wrap;
-  align-items: flex-start;
   justify-content: space-between;
+  margin-top: 5%; /* Added margin to separate from top */
 }
 
 .projects-card {
-  gap: 1rem;  /* Using rem for gaps*/
-  width: 48%;  /* Approx half of the container width to fit two in a row responsively */
-  min-height: 30vh;  /* Using viewport height for minimum height */
+  flex: 0 1 48%;  /* Allows flexing and bases initial width on 48% of parent */
+  min-height: 30vh;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
+  margin-bottom: 2rem; /* Adds space between rows */
 }
 
 .projects-image {
-  width: 100%;  /* Full width of the card */
-  height: 60%;  /* Making image height a percentage of the card's height */
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  align-items: flex-start;
+  width: 100%;
+  height: 60%;
+  max-width: 65%;  /* Maximum width of the image */
+  max-height: 50%; /* Maximum height of the image */
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 1);
+  object-fit: cover; /* Ensures the image covers the space without distorting aspect ratio */
+}
+
+.projects-text-container {
+  width: 100%;
+  max-width: 65%;  /* Matching image width */
+  text-align: left; /* Justifies the text */
+  box-sizing: border-box; /* Includes padding in width calculation */
 }
 
 .projects-copy {
-  gap: 0.5rem;  /* Consistent spacing using rem*/
   display: flex;
-  align-self: stretch;
-  align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;  /*  Padding inside the copy section */
+  padding: 1rem;
+  width: 100%;  /* Ensures copy uses full width of card */
 }
+
 .projects-text {
   color: rgba(0, 0, 0, 1);
   height: auto;
@@ -668,29 +670,28 @@
   line-height: 150%;
 }
 .projects-copy1 {
-  gap: 24px;
-  top: 244px;
-  left: 81px;
-  width: 572px;
   display: flex;
-  position: absolute;
-  align-items: center;
-  flex-shrink: 0;
   flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;  /* Ensures this container uses full width */
+  align-items: center; /* Center alignment for items if needed */
 }
 .projects-text04 {
   color: rgba(0, 0, 0, 1);
-  height: auto;
-  align-self: stretch;
-  text-align: left;
+  font-size: 2.5rem;  /* Adjusted font size for better visibility */
+  font-weight: bold;  /* Bold font weight for heading */
+  text-align: center;  /* Center text alignment if it suits your design */
   line-height: normal;
+  width: 100%;  /* Ensures text uses full width available */
+  margin-bottom: 0.5rem;  /* Adds a little space below the title */
 }
 .projects-text06 {
   color: rgba(130, 130, 130, 1);
-  height: auto;
-  align-self: stretch;
-  text-align: left;
+  font-size: 1.2rem;  /* Smaller font size for subheading */
+  text-align: center;  /* Center text alignment for consistency */
   line-height: 150%;
+  width: 100%;  /* Ensures text uses full width available */
 }
 .projects-navigation-footer {
   width: 100%;  
@@ -886,6 +887,173 @@
   border: none;
   font-size: 30px; 
   cursor: pointer;
+}
+
+.volunteer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.volunteer-volunteer {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  overflow: visible; /* Avoid hidden to see overflow during development */
+  position: relative;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+.volunteer-projects {
+  width: 100%; /* Full container width */
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: space-around; /* Evenly space out the cards with space around them */
+  padding-top: 2%; /* Space from top */
+}
+.volunteer-card {
+  gap: 24px;
+  width: 587px;
+  height: 464px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.volunteer-image {
+  width: 100%; /* Ensures the container spans the full width of its parent */
+  height: 280px; /* Adjust this value based on your design needs */
+  overflow: hidden; /* Hides anything outside the container */
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  align-items: center; /* This will help center the image vertically */
+  justify-content: center; /* This will help center the image horizontally */
+}
+
+.volunteer-image img {
+  width: 100%; /* Covers the full width of the container */
+  height: 100%; /* Covers the full height of the container */
+  object-fit: cover; /* Ensures the image covers the area without distorting aspect ratios */
+}
+.volunteer-image1 {
+  width: 100%; /* Full width of the parent */
+  height: 280px; /* Fixed height specified */
+  overflow: hidden; /* Ensures no overflow of content outside this container */
+  position: relative;
+  border-radius: 8px;
+  display: flex;
+  align-items: center; /* Center the image vertically */
+  justify-content: center; /* Center the image horizontally */
+}
+.volunteer-image1 img {
+  width: 100%; /* Full width of its container */
+  height: 100%; /* Full height of its container */
+  object-fit: contain; /* Ensures the image fits within the container, showing all parts of it */
+}
+
+
+
+.volunteer-copy {
+  gap: 4px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.volunteer-text {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 150%;
+}
+.volunteer-text02 {
+  color: rgba(130, 130, 130, 1);
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 150%;
+}
+.volunteer-card1 {
+  gap: 24px;
+  width: 587px;
+  height: 400px;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.volunteer-copy1 {
+  gap: 4px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.volunteer-text04 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 150%;
+}
+.volunteer-text06 {
+  color: rgba(130, 130, 130, 1);
+  height: auto;
+  align-self: stretch;
+  text-align: left;
+  line-height: 150%;
+}
+.volunteer-card, .volunteer-card1 {
+  width: 45%; /* Slightly less than half to fit two cards per row */
+  margin: 1%; /* Margin around each card */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items in the card */
+}
+
+.volunteer-image, .volunteer-image1 {
+  width: 100%; /* Full width of the card */
+  flex-grow: 0; /* No flex grow to control size */
+  aspect-ratio: 16 / 9; /* Maintain an aspect ratio */
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 1);
+}
+.volunteer-copy, .volunteer-copy1 {
+  width: 100%; /* Stretch to fill card */
+  padding: 10px; /* Padding inside the text area */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.volunteer-copy2 {
+  width: 100%; /* Full width to center title */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center title and subtitle */
+  margin-bottom: 20px; /* Space below the header section */
+}
+.volunteer-text08 {
+  color: rgba(0, 0, 0, 1);
+  height: auto;
+  align-self: stretch;
+  text-align: center;
+  line-height: normal;
+  font-size: 2.5rem;
+  font-weight: bold;  /* Bold font weight for heading */
+}
+.volunteer-text10 {
+  color: rgba(130, 130, 130, 1);
+  height: auto;
+  align-self: stretch;
+  text-align: center;
+  line-height: 150%;
+  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
