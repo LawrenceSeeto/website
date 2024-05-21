@@ -197,6 +197,7 @@
   justify-content: center;
 }
 .landingpage01-buttons-icon {
+  top: -10px;
   gap: 8px;
   width: 40px;
   height: 40px;
@@ -225,6 +226,7 @@
   position: absolute;
 }
 .landingpage01-buttons-icon1 {
+  top: -10px;
   gap: 8px;
   width: 40px;
   height: 40px;
@@ -605,6 +607,16 @@
   align-items: center;
   flex-direction: column;
 }
+.project-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none; /* Consider accessibility: You might want to manage focus styles differently */
+}
 
 .projects-projects {
   width: 100%;
@@ -694,15 +706,18 @@
   width: 100%;  /* Ensures text uses full width available */
 }
 .projects-navigation-footer {
-  width: 100%;  
-  min-height: 20vh; 
-  display: flex;
-  overflow: hidden;
-  position: absolute;
-  align-items: flex-start;
-  background-color: rgba(255, 255, 255, 1);
-  bottom: 0;
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center; /* Horizontally center all content */
+    align-items: center; /* Vertically center all content */
+    overflow: hidden;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+    bottom: 0;
+    padding: 10px 0; /* Optional: Add some padding for better spacing */
 }
+
 .projects-text08 {
   top: 52px;
   left: 80px;
@@ -1055,6 +1070,80 @@
   line-height: 150%;
   font-size: 1rem;
 }
+/* Interests Section */
+.interests-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.interests-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.interests-title {
+    font-size: 3rem; /* Adjust as needed */
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 10px;
+}
+
+.interests-subheading {
+    font-size: 1.25rem; /* Adjust as needed */
+    color: rgba(130, 130, 130, 1);
+}
+
+.interests-photos {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between photo frames */
+}
+
+.interests-photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%; /* Adjust width as needed */
+    max-width: 400px; /* Set a max width for larger screens */
+}
+
+.interests-photo-frame,
+.interests-photo-frame-wide {
+    width: 100%;
+    height: 300px; /* Fixed height for the frames */
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: rgba(247, 247, 247, 1);
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    position: relative;
+}
+
+    .interests-photo-frame img,
+    .interests-photo-frame-wide img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Scale the image to fit the frame without distortion */
+        position: absolute; /* Position absolutely to cover the entire frame */
+        top: 0;
+        left: 0;
+    }
+
+.interests-photo-text {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 1); /* Changed to full black */
+    text-align: center;
+    max-width: 100%;
+    padding: 10px; /* Add padding for better readability */
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+
+
 
 @media (max-width: 768px) {
     .projects-projects1, .projects-card {
